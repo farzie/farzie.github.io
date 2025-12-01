@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farzie - Creative Developer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-brand-bg text-brand-text font-sans selection:bg-brand-accent selection:text-white overflow-x-hidden">
+
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-orange-300 dark:bg-orange-600/50 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-yellow-300 dark:bg-yellow-600/50 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-red-200 dark:bg-red-600/50 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 backdrop-blur-md bg-nav-light border-b border-nav-border">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="" class="text-2xl font-bold tracking-tighter hover:text-brand-accent transition-colors text-brand-text">
+                Farzi<span class="text-brand-accent">.exe</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600 items-center">
+                <button id="dark-mode-toggle" class="text-xl p-2 rounded-full transition-colors text-brand-text hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-brand-accent">
+                    <span id="sun-icon" class="hidden">☀️</span>
+                    <span id="moon-icon">🌙</span>
+                </button>
+
+                <a href="#about" class="hover:text-brand-accent transition-colors text-gray-600 dark:text-gray-300">Tentang</a>
+                <a href="#work" class="hover:text-brand-accent transition-colors text-gray-600 dark:text-gray-300">Karya</a>
+                <a href="#contact" class="px-5 py-2 bg-gray-900 text-white rounded-full hover:bg-brand-accent transition-all shadow-lg hover:shadow-orange-500/30">Hubungi Saya</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none text-brand-text">☰</button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-card-bg border-b border-nav-border p-4 shadow-lg">
+            <a href="#about" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-accent">Tentang</a>
+            <a href="#work" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-accent">Karya</a>
+            <a href="#contact" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-accent">Hubungi Saya</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-20 relative">
+        <div class="text-center px-6 reveal">
+            <div class="inline-block px-3 py-1 mb-6 text-xs font-bold tracking-wider text-brand-accent-hover uppercase bg-orange-100 dark:bg-orange-900/50 rounded-full border border-orange-200 dark:border-orange-800">
+                Available for Freelance
+            </div>
+            <h1 class="text-5xl md:text-8xl font-bold tracking-tight mb-6 leading-tight text-text-primary">
+                Bikin Ide Jadi <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-yellow-500">Sebuah Kenyataan.</span>
+            </h1>
+            <p class="text-gray-500 dark:text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium">
+                Saya Farzie, seorang 3D Designer, Game Dev, & IoT Developer yang suka bereksperimen dengan hal baru.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#work" class="px-8 py-4 bg-brand-accent text-white font-bold rounded-full hover:bg-brand-accent-hover shadow-xl shadow-orange-500/20 hover:scale-105 transition-all">Lihat Proyek</a>
+                <a href="#contact" class="px-8 py-4 border-2 border-nav-border text-gray-600 dark:text-gray-300 font-bold rounded-full hover:border-brand-accent hover:text-brand-accent bg-card-bg transition-colors">Ngobrol Dulu</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full py-10 bg-marquee-bg border-y border-marquee-border overflow-hidden">
+        <div class="relative w-full flex overflow-x-hidden">
+            <div class="animate-marquee whitespace-nowrap py-2 flex space-x-12 text-3xl font-bold text-gray-300 dark:text-gray-600">
+                <span class="hover:text-brand-accent transition-colors cursor-default">BLENDER</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">KICAD</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">LARAVEL</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">RUST</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">C++</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">PYTHON</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">UNITY</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">GODOT</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">BLENDER</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">KICAD</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">LARAVEL</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">RUST</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">C++</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">PYTHON</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">UNITY</span>
+                <span class="hover:text-brand-accent transition-colors cursor-default">GODOT</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="work" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="mb-12 reveal">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-text-primary">Karya Pilihan<span class="text-brand-accent">.</span></h2>
+            <p class="text-gray-500 dark:text-gray-400">Kombinasi antara logika kode dan estetika visual.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+            
+            <div class="md:col-span-2 group relative overflow-hidden rounded-3xl bg-card-bg shadow-lg border border-card-border hover:shadow-orange-500/20 transition-all duration-500 reveal">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <img src="assets\images\game.png" alt="Backend Project" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute bottom-0 left-0 p-8 z-20 translate-y-2 group-hover:translate-y-0 transition-transform">
+                    <h3 class="text-2xl font-bold text-white mb-2">Game Dev</h3>
+                    <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity delay-100">Gim edukasi sejarah bertema petualangan.</p>
+                    <span class="px-3 py-1 text-xs bg-brand-accent text-white font-bold rounded-full">Godot</span>
+                </div>
+            </div>
+            
+            <div class="md:row-span-2 group relative overflow-hidden rounded-3xl bg-card-bg shadow-lg border border-card-border hover:shadow-orange-500/20 transition-all duration-500 reveal delay-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent z-10 opacity-80"></div>
+                <img src="assets\images\iot.png" alt="3D Model" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute bottom-0 left-0 p-8 z-20">
+                    <h3 class="text-2xl font-bold text-white mb-2">PCB Design</h3>
+                    <p class="text-gray-300 text-sm mb-4">Desain IoT Tempat Sampah Digital.</p>
+                    <span class="px-3 py-1 text-xs bg-white text-gray-900 font-bold rounded-full">Kicad</span>
+                </div>
+            </div>
+            
+            <div class="group relative overflow-hidden rounded-3xl bg-card-bg shadow-lg border border-card-border hover:shadow-orange-500/20 transition-all duration-500 reveal delay-200">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent z-10 opacity-80"></div>
+                <img src="assets\images\laboratorie.png" alt="Game Dev" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute bottom-0 left-0 p-6 z-20">
+                    <h3 class="text-xl font-bold text-white">Laboratorium Diorama</h3>
+                    <span class="text-xs text-orange-300 font-bold">Blender 3D</span>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-br from-brand-accent to-yellow-500 rounded-3xl p-8 flex flex-col justify-center items-start reveal delay-300 text-white shadow-xl shadow-orange-500/30">
+                <h3 class="text-3xl font-bold mb-2">Punya Ide?</h3>
+                <p class="text-white/90 mb-6">Mari wujudkan jadi sebuah kenyataan.</p>
+                <a href="#contact" class="px-6 py-2 bg-white text-brand-accent-hover rounded-full text-sm font-bold hover:bg-gray-100 transition-colors">Kontak Saya -></a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-marquee-bg border-y border-marquee-border">
+        <div class="max-w-4xl mx-auto px-6 text-center reveal">
+            <h2 class="text-sm font-bold tracking-widest text-brand-accent uppercase mb-6">Tentang Saya</h2>
+            <p class="text-2xl md:text-4xl leading-relaxed font-medium text-text-primary">
+                "Saya bukan sekadar mengerjakan tugas, saya <span class="text-brand-accent underline decoration-yellow-400 decoration-4 underline-offset-4">menyelesaikan masalah</span> dengan solusi teknis yang efisien."
+            </p>
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="p-6 bg-card-bg rounded-2xl shadow-sm border border-card-border hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-4xl mb-3">🚀</div>
+                    <div class="font-bold text-text-primary">Performance</div>
+                </div>
+                <div class="p-6 bg-card-bg rounded-2xl shadow-sm border border-card-border hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-4xl mb-3">🎮</div>
+                    <div class="font-bold text-text-primary">Interactive</div>
+                </div>
+                <div class="p-6 bg-card-bg rounded-2xl shadow-sm border border-card-border hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-4xl mb-3">🔌</div>
+                    <div class="font-bold text-text-primary">Hardware</div>
+                </div>
+                <div class="p-6 bg-card-bg rounded-2xl shadow-sm border border-card-border hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-4xl mb-3">🛠️</div>
+                    <div class="font-bold text-text-primary">Scalable</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6 max-w-5xl mx-auto text-center relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-accent/20 blur-3xl rounded-full -z-10"></div>
+        
+        <div class="reveal">
+            <h2 class="text-5xl md:text-7xl font-bold mb-8 text-text-primary">Siap Kolaborasi?</h2>
+            <p class="text-gray-500 dark:text-gray-400 text-xl mb-12">Entah itu proyek besar atau sekadar menyapa, inbox saya selalu terbuka.</p>
+            
+            <a href="mailto:farziexemail@gmail.com" class="inline-block text-2xl md:text-5xl font-bold text-text-primary border-b-4 border-brand-accent pb-2 hover:text-brand-accent hover:border-transparent transition-all">
+                farziexemail@gmail.com
+            </a>
+
+            <div class="mt-16 flex justify-center gap-8 text-2xl">
+                <a href="https://www.linkedin.com/in/fajar-sidiq-tri-utomo/" class="text-gray-400 hover:text-brand-accent hover:scale-110 transition-all font-semibold p-2 rounded-full hover:bg-card-border" title="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/fajar.skibidi/" class="text-gray-400 hover:text-brand-accent hover:scale-110 transition-all font-semibold p-2 rounded-full hover:bg-card-border" title="Instagram">
+                    <i data-lucide="instagram"></i>
+                </a>
+                <a href="https://github.com/farzie" class="text-gray-400 hover:text-brand-accent hover:scale-110 transition-all font-semibold p-2 rounded-full hover:bg-card-border" title="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-400 text-sm border-t border-nav-border bg-card-bg">
+        <p>&copy; 2025 Farzie. Dibuat dengan Tailwind & Es teh jumbo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
